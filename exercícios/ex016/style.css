@@ -1,0 +1,36 @@
+@charset "UTF-8"; /*Adicionamos uma regra para ele ter compatibilidade com as caracteristicas especiais dentro das css*/
+* {
+   /* height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+
+}/*Aqui são as configurações globais, colocamos a altura em 100% pois queremos usar o degradê de cima para baixo e já vimos que nesse caso tem que aumentar a altura e decidimos que a fonte será arial*/
+
+body{
+    background-image: linear-gradient(to right, #C2FCDB 28%, #8DD0F8);
+} /*Criamos o degrade no body, agora devemos escolher o conteudo e colocar fundo branco letra preta*/
+
+main{
+    background-color: white;
+    width: 600px;
+    padding:10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(108, 158, 188, 0.533);
+
+
+} /*Definimos o fundo da caixa main em branco com uma largura de 600px, adicionamos um acolchoamento com o padding que é um espaço entre o conteudo escrito dentro da caixa e as bordas, colocamos a caixa no meio da tela com um margin: auto; deixamos as bordas arredondadas em 10 pixels com o border-radius: 10px;, colocamos uma sombra de trás da caixa com um box-shadow sendo 5px para a direita, 5px para baixo e 15px de espaçamento, usamos uma cor de sombra muito proxima a cor do degrade do body e atraves do rgba deixamos a sombra um pouco transparênte  */
+
+h1{
+    color: #9C4839;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(110, 51, 42, 0.723) ;
+
+} /*Decidimos a cor do h1 de acordo com nossa paleta e colocamos o testo no meio da caixa main com um text-align: center; e adicionamos uma sombra no texto do h1 com um  text-shadow: 1px 1px 2px rgba(110, 51, 42, 0.723) ; */
+
+h2{
+    color: #072D2A;
+}
+
+p {
+    text-align: justify;
+}/*Todos os meus parágrafos estarão justificados com um text-align: justify;*/

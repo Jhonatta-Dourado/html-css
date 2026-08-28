@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = peseudo-element
+        > = children (filho)
+
+        */
+
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color:red;
+            text-decoration: none; /*Aqui estou tirando o sublinhado do link*/
+            font-weight: bold; /*Colocando em negrito*/
+            
+        }
+        a:visited{
+            color: darkred;
+
+        } /*Aqui eu estou declarando que se os links forem visitado*/
+
+        a:hover{
+            color: black;
+            text-decoration: underline ; /*linha em baixo*/
+        } /*Quando eu passar o mouse em cima ele ficará preto e sublinhado*/
+
+        a:active {
+            color: yellow;
+        } /*quando clicar em cima do link*/
+
+        /*O pseudo elemento mexe diretamente no conteúdo periferico do elemento, são representados por :: dois pontos duas vezes, funciona para elementos, id e classes */
+
+
+
+       .especial {
+        background-color: rgb(255, 140, 140);
+       }
+       
+       .especial::before{
+            content: '→ ' ;
+       }
+       
+       .especial::after{
+            content: ' ←';
+       }
+       
+       
+       
+       
+       
+       
+       
+       
+        /*a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        } /*o seletor significa depois de todos os links, content = avise a string link, la na interface inicial vai aparecer o nome link sem ter editado no html ou seja o pseudo elemento alterou*/
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 320px; /*Valor minimo de largura, escolhemos 280px pois é a largura de celulares bem antigos, na vdd é 320 porém temos 20px de padding*/
+            max-width: 800px; /*Valor maximo de largura*/
+            margin: auto;
+        }
+
+        img {
+            width: 100%; /*Declaramos que a largura da foto será de 100%, a partir daqui quando a tela diminui a imagem vai diminuindo junto*/
+        }
+
+        /*Porém iremos usar a forma no html o picture*/
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique, exercitationem totam accusamus animi aspernatur possimus assumenda quos hic ab adipisci maiores nobis dolore maxime, et magnam eum sapiente enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident nesciunt inventore odit enim! A, nesciunt corporis reiciendis et perferendis possimus dolore facere minima voluptatum sed nisi, iste cum. Molestiae! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, porro possimus officiis adipisci totam numquam dolorem quia commodi vitae sint enim laudantium doloremque recusandae placeat, repellendus sunt cumque? Tempore, minus.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture> <!--Quando a tela tiver menor que 800px será carregado a foto da irina menor-->
+
+
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique, exercitationem totam accusamus animi aspernatur possimus assumenda quos hic ab adipisci maiores nobis dolore maxime, et magnam eum sapiente enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident nesciunt inventore odit enim! A, nesciunt corporis reiciendis et perferendis possimus dolore facere minima voluptatum sed nisi, iste cum. Molestiae! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, porro possimus officiis adipisci totam numquam dolorem quia commodi vitae sint enim laudantium doloremque recusandae placeat, repellendus sunt cumque? Tempore, minus.</p>
+    </main>
+    
+</body>
+</html>

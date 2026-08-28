@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+           font-family: "Work Sans", sans-serif; /*Dessa forma significa que eles vai tentar achar a arial, caso não ache passa para a segunda e assim suscetivamente até o computador que ira consumir o conteudo ter um modelo da familia selecionada*/
+        
+
+
+            font-size: 1em;/*Essa é a forma de alterar o tamanho da fonte, atraves do font-size, existe diversas formas de aplicar essa css pois existe diversas formas de medir tamanho, temos as medidas absolutas e as medidas relativas: 
+            as ABSOLUTAS são: cm (centimetro), mm(milimetro), in (polegadas), px (pixel), pt (ponto), pc (paica). Essas são as absolutas, 1 centimetro é 1 centimetro, porém temos dificuldades para representar 1 centimetro pois as vezes o navegador não consegue chegar a 1 cm pois existem telas de tamanho diferente, algo exibido em uma tv de 50 polegadas ira mostrar diferente diferente de um celular.
+            as RELATIVAS são: em (relativo ao tamanho da letra M maiúscula da fonte determinada), ex (relativo a altura-x de uma fonte), rem (mesma coisa do EM porém é relativo a fonte que está configurada no body), vw (view winder(largura da viewPort = tamanho da tela) porcentagem da largura da tela, vh (altura da viewPort)), %(porcentagem).
+            As recomendações oficiais é que se use para medidas de font o px ou em.
+            16px geralmente é o tamanho normal e padrão da fonte-size, 16px geralmente é igual a 1em, se eu colocar 2em então ele será o dobro do tamanho de 16px, se colocarmos 1.5em será 16px+8px ou seja, 1 e meio, podemos colocar também 0.5em que será a metade de 16px, então podemos dizer que o em é relativo ao tamanho natural da fonte. vamos preferir usar o em pois ele trabalha em cima de porcentagem do tamanho padrão, independente do dispositivo que for usar o em será relativo ao tamanho padrão daquele dispositivo.    
+            
+            Não pode haver espaço entre o numero e o tipo da medida ex 1em, 1px*/
+
+
+
+
+            font-weight: 900 ; /*Essa é a css para editar o peso da fonte deixar ela mais gordinha ou mais magrinha, de forma mais técnica é alterando o glifo da familia tipográfica da fonte determinada, entre o light que é a letra mais magrinha até o extranegrito que é a letra mais gordinha, no vscode temos o lighter, normal, bold e bolder ou podemos também usar a variação numerica que começa no 100 e termina em 900. usamos esse atributo geralmente para negritar algum texto*/
+
+
+            font-style: italic; /*podemos escolher entre normal italico e obliquio*/
+
+            text-decoration: underline; /*Podemos colocar uma linha embaixo com o underline ou em cima com o overline */
+
+            /*A sua familia de fonte tem que permiter essas configurações negrito, italico e sublinhado, PODEMOS COLOCAR TODOS ESSES ATRIBUTOS EM UMA UNICA LINHA
+            no font, porém temos que decorar a ordem a ser colocado que será essa 1º font-style, 2º font-weight, 3º font-size, 4º font-family no caso ficaria assim:
+            font: italic bolder 3em 'Work Sans, Arial;*/
+
+
+
+
+
+
+
+
+
+
+        }
+        h1, {
+            font-family: 'Times New Roman', Times, serif;
+        } /*Escolhemos uma fonte para h1 e h2*/
+        h2 {
+            font: italic bolder 3em 'Work Sans', Arial;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates illo velit sequi placeat repudiandae? Tempora nulla doloribus, esse magnam omnis architecto commodi eos, a illum ut sapiente maiores iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates illo velit sequi placeat repudiandae? Tempora nulla doloribus, esse magnam omnis architecto commodi eos, a illum ut sapiente maiores iste! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis expedita, sequi vel deleniti itaque et fuga minus ratione reprehenderit iste! Corrupti amet temporibus et sit sequi fugit delectus in illum?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis expedita, sequi vel deleniti itaque et fuga minus ratione reprehenderit iste! Corrupti amet temporibus et sit sequi fugit delectus in illum?</p>
+    <h2>Subtítulo do exercício</h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates illo velit sequi placeat repudiandae? Tempora nulla doloribus, esse magnam omnis architecto commodi eos, a illum ut sapiente maiores iste!</p>
+    
+
+</body>
+</html>

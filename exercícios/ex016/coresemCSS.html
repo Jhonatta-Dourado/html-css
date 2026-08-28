@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CCS</title>
+</head>
+<body>
+   
+   <!--Representação da cor por nomes, desvantagem é que apesar de muitos nomes uma hora acaba no vsCode-->
+
+    <h2 style="background-color: blue; color: white;">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta ratione cum quidem quas tempore labore excepturi veniam vero modi praesentium, odio magnam dolores facere autem officiis in ex expedita.</p>
+
+
+    <!--Representação por códigos Hexadecimais -->
+    <!--Decial: 0 1 2 3 4 5 6 7 8 9, acima disso fazemos combinações exemplo 1 e 0 que da 10, a base é decimal porque temos 10 digitos começando do 0 até o 9-->
+    <!--Hexadecimal são ao todo 16: 0 1 2 3 4 5 6 7 8 9 A B C D E F, usamos letras pois não podemos usar o 10 em diante pois são dois digitos-->
+    <!--Todas as cores são formadas por um conjunto de cores (vermelho, verde e azul) no codigo 0000ff temos (00 de vermelho, 00 de verde e ff de azul) 00 é o minimo e ff é o maximo, cada valor desse vão de 0 a 255 -->
+
+     <h2 style="background-color: #0000ff; color: #ffffff;">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta ratione cum quidem quas tempore labore excepturi veniam vero modi praesentium, odio magnam dolores facere autem officiis in ex expedita.</p>
+
+
+    <!--A terceira forma é atraves do codigo rbg, nele temos o primeiro valor vermelho o segundo verde e o terceiro azul -->
+    <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta ratione cum quidem quas tempore labore excepturi veniam vero modi praesentium, odio magnam dolores facere autem officiis in ex expedita.</p>
+     
+    <!--Outra forma é atraves de caractersticas de cores, todas as cores possuem Matiz, Luminosidade e Saturação, que em inglês fica (Hue{matis}, lightness{luminosidade}, Saturation{saturação}) ou hsl, nessa mesma ordem, o azul fica 240 de matiz, 100% de saturação e 50% de luminosidade, saturação e luminosidade é calculado em porcentagem -->
+   
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);" >Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta ratione cum quidem quas tempore labore excepturi veniam vero modi praesentium, odio magnam dolores facere autem officiis in ex expedita.</p>
+
+
+    <!--podemos ainda usar a ajuda do vsCODE no qual vc diz o rgd passa o mouse em cima e ele te da a opção de escolher a cor, dessa forma podemos escolher também a transparência -->
+     <h2 style="background-color: rgba(62, 107, 59, 0.484); color: rgb(14, 37, 14);">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta ratione cum quidem quas tempore labore excepturi veniam vero modi praesentium, odio magnam dolores facere autem officiis in ex expedita.</p>
+</body>
+</html>

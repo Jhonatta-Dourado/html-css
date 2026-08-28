@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon01.ico.ico" type="image/x-icon">
+    <title>Formatação de Texto</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag b. </p> <!--Forma de colocar em negrito (não semântica, pela forma), a tag b não tem significado somente forma, formato em negrito-->
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usano a tag STRONG (semântica).</p> <!--vizualmente não existe diferença a formatação dos dois é identica, porém a tag b somente tem forma, já a strong aleém da forma da um sentido, a frase em negrito é forte está em destaque-->
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica) </p> <!--cntrl + shift + p  la coloca add e coloca a tag quer quer encapsular-->
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p> <!--Vizualmente os dois são iguais porém significado ou semântica somente esse tem.-->
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark style="background-color: lime;">um texto marcado</mark> usando a tag MARK.</p> <!--Se quisessemos alterar a cor da marcação teriamos que usar css, pois cor não é semântica é significado, podemos atribuir um atributo style na tag, a partir desse momento estamos usando css e não mais html -->
+
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final</p> <!--Perceba que ele não herdou a edição do paragrafo anterior, para ele herda a configuração não pode ser feita dentro da tag, para isso tem que criar uma tag style na header e criar um seletor com a tag mark e colocar la dentro o background-->
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo</p> <!--Perceba que a tag big esta vermelha pois é obsolenta, mas a small não, isso ocorre por que big não é semantico se caso vc queira aumentar uma letra vc usa o css, já o small ainda continua com sentido, as letras pequenas de um contrato e etc...-->
+
+    <h2>Texto deletado</h2>
+    <p>podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar o um <ins>texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisa do tipo x<sup>20</sup>+3 </p>
+    <h2>Texto subscrito</h2>
+    <p>Parainserir coisa do tipo H<sub>2</sub>O </p>
+    
+
+
+
+
+</body>
+</html>

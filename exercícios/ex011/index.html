@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+    </picture><!--É uma tag de imagem dentro dela teremos tags img e ela permite criar vários source, dentro desse elemento iremos criar uma tag source do type media, por padrão ele sugere a largura minima, porém vamos trabalhar com a largura maxima, por padrão a tag pictures irá carregar a imagem g, mas se por acaso se seu dispositivo tiver o tamanho maximo de 1050px (colocamos quebrado pois sabemos que o tamanho da nossa imagem é 1000px para não criar nenhuma barra de rolagem tem que ter uma folguinha) que foi o que definimos no atributo media='(max-width: 1000px)' vamos carregar a imagem M no srcset="imagens/foto-m.png", no type da imagem estamos usando png, na medida que vamos aumentando o tamanho da tela ele vai aumentando a imagem, vamos fazer isso agora com a imagem pequena, obrigatoriamente a tag soucer tera que está acima da source da imagem m, fazemos isso para aumentar a boa experiencia do usuario e evitar botsharrel do google-->
+
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="media/Eyes-Patrick Jordan Patrikios.mp3" controls>
+
+    </audio>--><!--A maneira mais simples é atraves dessa tag, nela temos que fora o src devemos colocar atributos para que a musica toque por exemplo, autoplay, controls e etc, porém existem navegadores que não possui compatibilidade com essa tag, inclusive não possui compatibilidade com modelo mp3, PARA TER COMPATIBILIDADE COM TODOS OS NAVEGADORES DEVEMOS TER TIPOS MP3, WAV e OGG, tendo que existir outra forma de adicionar audio pois essa ficou limitada, observe a baixo a outra forma -->
+
+    <audio preload="none"  controls loop>
+        <source src="media/Eyes-Patrick Jordan Patrikios.mp3" type="audio/mpeg">
+        <source src="media/Eyes-Patrick Jordan Patrikios.ogg" type="audio/ogg">
+        <source src="media/Eyes-Patrick Jordan Patrikios.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="media/Eyes-Patrick Jordan Patrikios.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio><!--tiramos o atributo src="" que a propria tag audio cria e dentro da tag audio vamos criar os source src, colocamos o src da midia e o type, colocamos um dos types, tem sobre o assunto no pdf da aula, precisariamos usar um conversor para ter os 3 tipos de audio, a ordem dos source é muito importante, primeiro ele vai carregar o mp3 se não conseguir ele vai carregando os outros modelos e se ele não conseguir carregar com nenhum desses 3 tipos colocaremos um paragrafo para ser baixado.
+    PARAMETROS
+    preload, temos 3 opções: auto, metadata, none, padrão é auto então é perigoso pois ele so vai carregar o site depois que carregar todo o audio e for algo pesado ai fica complicado, ou seja, se vc colocar nenhum atributo ou colocar preload:"auto"; tera primeiro que carregar a midia para abrir o site.
+     metadata, vai somente carregar o nome do arquivo as informações como data, tamanho e etc.
+     o none ele não vai carregar nada, até que o usuario aperte play nos controles
+     temos também o atributo loop que fica recomeçando a musica em um loop infinito.
+     obs importante, devemos evitar o aquivo wav pois são grandes e pesados   -->
+
+
+    
+</body>
+</html>

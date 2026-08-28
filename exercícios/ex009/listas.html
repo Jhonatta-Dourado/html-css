@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2><!--São listas que a ordem faz difereça, ex 1. 2. 3. ou a. b. c. ou A. B. C. ou i, ii, iii, ou I, II, III-->
+    <ol><!--Essa é a tag de lista ordenada, com o atributo type podemos escolher entre o tipo da lista 1. 2. 3. ou a. b. c. ou A. B. C. ou i, ii, iii, ou I, II, III, Caso eu queira começar a lista de alguma posição que não seja a primeira eu uso o atributo start="numero" eai a lista começa a partir desse numero-->
+        <li>Acordar</li><!--Essa tag define os itens dentro de uma lista, A PARTIR DO HTML5 A TTAG DE FECHAMENTO </li> É OPCIONAL-->
+        <li>Ligar para o João
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2><!--São listas que não tem sequências numericas ou de caracteres organizando a ordem, temos apenas pontinhos-->
+    <ul type="square"><!--Nas ul também podemos escolher um type, temos os types, disc, circle e square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+
+    </ul>
+    <!--combinando litas-->
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+            <ol type="a">
+               <li>Cliper</li>
+               <li>Visual Basic</li>
+               <li>Fortran</li>
+               <li>Delphi</li>     
+            </ol>
+        <li>Novas</li>
+            <ol type="a" start="5"> <!--O start é um parametro numerico por mais que a lista seja alfanumerico devemos da o parametro em numero não adiantaria eu colocar o valor de start= "e"-->
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Nija Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+
+    </ol>
+
+    <!--lISTAS DE DEFINIÇÕES É UMA LISTA COM UM MOMENTARIO ABAIXO DELA, VEJA O MODELO.-->
+    <h2>Listas de definições</h2>
+
+    <dl><!--Essa é a tag de uma lista de definições-->
+        <dt>Termo</dt><!--essa é a tag de termo-->
+        <dd>escrição</dd><!--essa é a tag de definição-->
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do desingn de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </dl>   
+
+    
+</body>
+</html>

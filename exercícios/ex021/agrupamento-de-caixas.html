@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+       
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.351);/*Declaração de sombra oa valores indicam: 1º deslocamento horizontal, 2º deslocamento vertical, 3º embaçamento e 4º espaçamento 5º cor da sombra*/
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 3px 30px 3px 3px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px 10px 0px;/*arredondamento de bordas, começando da esquerda de cima*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.356);
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!--Todas são tags in-blok são como divs a diferença das citadas abaixo é que são semânticas-->
+    <header>
+        <h1>Meu site</h1>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav> <!--Indicação da parte de navegação, links, menu*/-->
+    </header><!--Indicação do cabeçalho-->
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+
+        </section>
+        <section id="noticias"> <!--indicação de uma seção-->
+            <article> <!--Indicação de um artigo-->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eos adipisci tempora illum rem iusto nemo cumque id, quasi commodi! Omnis saepe sed quisquam beatae modi nihil praesentium cupiditate illum!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside> <!--Indicação de um assunto periferico sobre o artigo-->
+
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main> <!--Indicação do conteúdo principal-->
+    <footer>
+        <p>Desenvolvido por taliba ® </p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block; /*significa tudo na mesma linha*/
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            
+        }
+
+        /*A pseudoclasse é representada por (:) dois pontos elas devem está relacionadas a um elemento ou uma classe.
+        A pseudoclasse está relacionado a um estado, por exemplo, se está ativo, se está marcado, se está vázio, se está habilitado, se o mouse está passando por cima que é o caso do hover.*/
+        div:hover {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

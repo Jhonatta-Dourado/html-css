@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1><!--são links que apotam para outros sites que não são nossos, sites externos-->
+
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório publico no GitHub</a>.</p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Canal gratuito no YouTube</a></p>
+    <!--Quando usarmos links externos para outro site, é extremamente recomendado criar dois atributos, target="_blank" e rel="external", o atributo rel diz que esse link é um link externo, vai para outro site e o atributo target com o value _blank não permite que o link se sobreponha sobre o seu site e o alvo do link sera uma janela em branco ou seja, uma nova janela.-->
+
+    <h1>Usando links internos</h1>
+    <!--link interno é um link que faz uma relação com outra pagina que está no nosso servidor e pertence ao nosso proprio site -->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a>.</p> <!--Aqui colocamos o atributo rel em next que quer dizer próxima(página)isso diz para o google por exemplo google essa pagina aqui é diretamente a minha proxima pagina  a que estamos e não permite o google escolher
+    O target usado nesse link é para dizer que o alvo é a propria pagina _self-->
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="livro/10 - Ligações em toda parte.pdf" type="application/zip">Baixar o tutorial em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip"  type="application/zip">Tutorial compactado em ZIP</a></li>
+    </ul>
+<!--No caso do arquivo em pdf o google ira reconhecer então deve ter o atributo dowload, já no caso zip não precisa do atributo dowload o type vc tem que olha... no material em pdf tem um site -->
+
+    <!--Quando quisermos um link fazio podemos colocar no href um #-->
+
+</body>
+</html>
