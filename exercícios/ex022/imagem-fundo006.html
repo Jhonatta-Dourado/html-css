@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
@@ -12,11 +12,21 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+            /*Shorthand - background (reune tudo em uma declaração), ordem: 
+            color > image > position > repeat > {size} > attachment, obs1: apesar da documentação oficial falar que podemos usar o size infelizmente ainda não funciona. vamos fazer um:
+            
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed; */
+            
+
         }/*Podemos tentar colocar a imagem em toda a tela configurando o height em 100% vh e o bc-size em 100% na vertical e 100% na horizontal, o problema é que ao diminuir o tamanho da tela a imagem vai ficando achatada, logo, essa não seria a melhor solução, por padrão o bg-size contém o atributo auto, porém temos também o atributo contain faz a imagem ficar 100% exibida, não podendo haver cortes, logo se diminuirmos a altura da janela ele irá criar barras laterais e se diminuirmos a largura aparecerá barras em cima e em baixo, temos ainda o atributo cover (significa cobrir), ele ira cobrir a tela inteira mesmo que para isso ele corte a imagem da tela quando necessário, diferente do contain que sempre mostra a imagem inteira*/
+
+        /*Ao rolarmos a tele iremos perceSe precisarmos que a imagem ira acabar se não houver um repeat, então queremos rolar a tela e a imagem ficar travada, isso se chama vinculo (attachment), o padrão do attachment é scroll onde o fundo rola junto com o conteúdo, já o fixed iremos rolar a tela e a imagem ficará fixada, ou seja combinando o size cover com o attachment fixed, iremos conseguir um execelente resultado */
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +37,9 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempora alias eligendi similique, delectus quod eum rem, doloremque velit ea asperiores odit aspernatur aut natus? Numquam sint magni hic sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias, illum ipsum quis repellat atque dolore dignissimos. Consectetur, perferendis cum. A pariatur facere assumenda fuga aperiam officiis voluptas tenetur animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas distinctio, est, amet necessitatibus id ducimus, molestias cumque aperiam illo mollitia culpa! Aliquid aspernatur nam aut quas recusandae maxime, dolorum eum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempora alias eligendi similique, delectus quod eum rem, doloremque velit ea asperiores odit aspernatur aut natus? Numquam sint magni hic sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias, illum ipsum quis repellat atque dolore dignissimos. Consectetur, perferendis cum. A pariatur facere assumenda fuga aperiam officiis voluptas tenetur animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas distinctio, est, amet necessitatibus id ducimus, molestias cumque aperiam illo mollitia culpa! Aliquid aspernatur nam aut quas recusandae maxime, dolorum eum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempora alias eligendi similique, delectus quod eum rem, doloremque velit ea asperiores odit aspernatur aut natus? Numquam sint magni hic sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias, illum ipsum quis repellat atque dolore dignissimos. Consectetur, perferendis cum. A pariatur facere assumenda fuga aperiam officiis voluptas tenetur animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas distinctio, est, amet necessitatibus id ducimus, molestias cumque aperiam illo mollitia culpa! Aliquid aspernatur nam aut quas recusandae maxime, dolorum eum.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempora alias eligendi similique, delectus quod eum rem, doloremque velit ea asperiores odit aspernatur aut natus? Numquam sint magni hic sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias, illum ipsum quis repellat atque dolore dignissimos. Consectetur, perferendis cum. A pariatur facere assumenda fuga aperiam officiis voluptas tenetur animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas distinctio, est, amet necessitatibus id ducimus, molestias cumque aperiam illo mollitia culpa! Aliquid aspernatur nam aut quas recusandae maxime, dolorum eum.</p>
     </main>
     
