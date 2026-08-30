@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        section#container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+
+        }
+        /*O container terá uma posição relativa, já o que esta dentro o conteudo no caso nosso o article, terá o posicionamento absoluto, ao colocarmos o elemento como absoluto podemos editar duas propriedades, esquerda ou direita (left, right), e cima ou baixo (top, bottom) e podemos trabalhar com porcentagem, lembrando que o ponto de referencia do objeto que está dentro é o canto superior esquerdo, então, teremos que fazer uma transformação para que o ponto de referência seja o centro do segundo elemento atraves do translate() e valos colocar os valores de cima e baixo em porcentagem nesso nosso caso -50%, -50%*/
+
+
+        #conteudo {
+
+             background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position:absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+           
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
