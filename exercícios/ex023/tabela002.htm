@@ -11,6 +11,8 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative; /*Adicionamos um posicionamento relativo para poder fixar o cabeçalho*/
         }
         
         td, th {
@@ -28,6 +30,12 @@
         thead, tfoot {
             background-color: #383838;
             color: white;
+        }
+        
+        thead > tr > th {
+            position: sticky; /* adicionameos o position em sticky para possibilitar o fixamento do cabeçalho*/
+            top: -1px; /*Aqui declaramos que o cabeçalho ira colar na parte -1px, dessa formça não ficará espaço*/
+            background-color: #383838; /*colocamos o bg para que não seja fixado somente os dados de tr e th*/
         }
 
         tbody > tr:nth-child(2n){
@@ -180,5 +188,11 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis eum, ullam doloremque mollitia distinctio enim maxime quibusdam quam delectus dicta neque voluptatum officia, similique reprehenderit, eius molestiae blanditiis provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita, ipsam, similique dolore laudantium possimus voluptate nobis laborum, deleniti incidunt inventore voluptatem velit labore facere dicta soluta aut unde. Quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, accusamus deleniti. Culpa consequuntur amet eaque molestiae soluta quae, odit corrupti qui aspernatur, iste architecto sequi sunt optio facilis atque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque earum tempore maiores veritatis recusandae magni sed pariatur animi, nulla quis labore libero beatae obcaecati porro. Alias facilis voluptas qui soluta?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis eum, ullam doloremque mollitia distinctio enim maxime quibusdam quam delectus dicta neque voluptatum officia, similique reprehenderit, eius molestiae blanditiis provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita, ipsam, similique dolore laudantium possimus voluptate nobis laborum, deleniti incidunt inventore voluptatem velit labore facere dicta soluta aut unde. Quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, accusamus deleniti. Culpa consequuntur amet eaque molestiae soluta quae, odit corrupti qui aspernatur, iste architecto sequi sunt optio facilis atque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque earum tempore maiores veritatis recusandae magni sed pariatur animi, nulla quis labore libero beatae obcaecati porro. Alias facilis voluptas qui soluta?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis eum, ullam doloremque mollitia distinctio enim maxime quibusdam quam delectus dicta neque voluptatum officia, similique reprehenderit, eius molestiae blanditiis provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita, ipsam, similique dolore laudantium possimus voluptate nobis laborum, deleniti incidunt inventore voluptatem velit labore facere dicta soluta aut unde. Quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, accusamus deleniti. Culpa consequuntur amet eaque molestiae soluta quae, odit corrupti qui aspernatur, iste architecto sequi sunt optio facilis atque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque earum tempore maiores veritatis recusandae magni sed pariatur animi, nulla quis labore libero beatae obcaecati porro. Alias facilis voluptas qui soluta?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis eum, ullam doloremque mollitia distinctio enim maxime quibusdam quam delectus dicta neque voluptatum officia, similique reprehenderit, eius molestiae blanditiis provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita, ipsam, similique dolore laudantium possimus voluptate nobis laborum, deleniti incidunt inventore voluptatem velit labore facere dicta soluta aut unde. Quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, accusamus deleniti. Culpa consequuntur amet eaque molestiae soluta quae, odit corrupti qui aspernatur, iste architecto sequi sunt optio facilis atque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque earum tempore maiores veritatis recusandae magni sed pariatur animi, nulla quis labore libero beatae obcaecati porro. Alias facilis voluptas qui soluta?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis eum, ullam doloremque mollitia distinctio enim maxime quibusdam quam delectus dicta neque voluptatum officia, similique reprehenderit, eius molestiae blanditiis provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita, ipsam, similique dolore laudantium possimus voluptate nobis laborum, deleniti incidunt inventore voluptatem velit labore facere dicta soluta aut unde. Quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, accusamus deleniti. Culpa consequuntur amet eaque molestiae soluta quae, odit corrupti qui aspernatur, iste architecto sequi sunt optio facilis atque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque earum tempore maiores veritatis recusandae magni sed pariatur animi, nulla quis labore libero beatae obcaecati porro. Alias facilis voluptas qui soluta?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis eum, ullam doloremque mollitia distinctio enim maxime quibusdam quam delectus dicta neque voluptatum officia, similique reprehenderit, eius molestiae blanditiis provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor expedita, ipsam, similique dolore laudantium possimus voluptate nobis laborum, deleniti incidunt inventore voluptatem velit labore facere dicta soluta aut unde. Quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, accusamus deleniti. Culpa consequuntur amet eaque molestiae soluta quae, odit corrupti qui aspernatur, iste architecto sequi sunt optio facilis atque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque earum tempore maiores veritatis recusandae magni sed pariatur animi, nulla quis labore libero beatae obcaecati porro. Alias facilis voluptas qui soluta?</p>
 </body>
 </html>
