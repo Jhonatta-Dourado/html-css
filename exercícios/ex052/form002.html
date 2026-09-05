@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="nome de usuário"
+            autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="mínimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+        <!--
+        Quando os campos forem obrigatório o preenchimento antes do envio, devemos adicionar o atributo required, significa requerido ou obrigatório.
+        
+        podemos adicionar quantidade minimas de caracteres que podem ser preenchidos nos campos com o atributo minlength="". Também podemos declara o maximo que seria maxlength="".
+        
+        Podemos mudar o tamanho da caixa com um size="" ele decide quantos caracteres serão mostrado sem barra de rolagem.
+        
+        Se usarmos o atributo placeholder="" poderemos deixar o campo preenchido com um texto como se ele fosse um papel de parede que ira sumir quando o usuario começar a digitar, serve para deixar dicas como: nome de usuário.
+        
+        Se quisermos desligar as sugestões que aparece na caixa quando vc clica nela, podemos usar o atributo autocomplete=""e colocar como off entre as aspas. Esse atributo vai na tag form. Ele também funciona diretamente na tag input, porém, diferente da tag form na input ele sugere uma gama enorme do que pode ser completado, como apelido, foto, telefone e etc e o programador escolherá um.
+
+        -->
+
+
+
+    </form>
+</body>
+</html>
